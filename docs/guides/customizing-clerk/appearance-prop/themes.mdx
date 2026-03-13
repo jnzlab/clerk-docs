@@ -690,6 +690,11 @@ To enable both light and dark mode support (which will respect system preference
 :root {
   color-scheme: light dark;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
 ```
 
 You can also control dark mode via a class, data attribute, or media query by specifying `color-scheme: dark` in your `global.css` file:
